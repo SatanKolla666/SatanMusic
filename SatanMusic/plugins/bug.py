@@ -8,12 +8,12 @@ from pyrogram.types import (
     Message,
 )
 
-from AnonX import app as Client
+from SatanMusic import app as Client
 from config import (
     OWNER_ID as owner_id,
 )
 
-SUPPORT = "Alisha_Support"
+SUPPORT = "SatanXDSupport"
 
 def content(msg: Message) -> [None, str]:
     text_to_return = msg.text
@@ -45,7 +45,7 @@ async def bug(_, msg: Message):
     thumb = "https://telegra.ph//file/b9d5a58ab7146c0b385e7.jpg"
     
     bug_report = f"""
-**#ʙᴜɢ :** **@VENOM_HAIN_HUM**
+**#ʙᴜɢ :** **@Tashith_Ma**
 
 **ʀᴇᴩᴏʀᴛᴇᴅ ʙʏ :** **{mention}**
 **ᴜsᴇʀ ɪᴅ :** **{user_id}**
@@ -63,7 +63,7 @@ async def bug(_, msg: Message):
     if user_id == owner_id:
         if bugs:
             await msg.reply_text(
-                "<b>» ᴀʀᴇ ʏᴏᴜ ᴄᴏᴍᴇᴅʏ ᴍᴇ 🤣, ʏᴏᴜ'ʀᴇ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏғ ᴛʜᴇ ʙᴏᴛ.</b>",
+                "<b>» ᴀʀᴇ ʏᴏᴜ ᴄᴏᴍᴇᴅʏ ᴍᴇ , ʏᴏᴜ'ʀᴇ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏғ ᴛʜᴇ ʙᴏᴛ.</b>",
             )
             return
         else:
@@ -79,7 +79,7 @@ async def bug(_, msg: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "• ᴄʟᴏsᴇ •", callback_data=f"close_reply")
+                                " ᴄʟᴏsᴇ ", callback_data=f"close_reply")
                         ]
                     ]
                 )
@@ -92,9 +92,9 @@ async def bug(_, msg: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "• ᴠɪᴇᴡ ʙᴜɢ •", url=f"{msg.link}"),
+                                " ᴠɪᴇᴡ ʙᴜɢ ", url=f"{msg.link}"),
                             InlineKeyboardButton(
-                                "• ᴄʟᴏsᴇ •", callback_data="close_send_photo")
+                                " ᴄʟᴏsᴇ ", callback_data="close_send_photo")
                         ]
                     ]
                 )
