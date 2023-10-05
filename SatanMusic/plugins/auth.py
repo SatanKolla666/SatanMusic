@@ -3,17 +3,18 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
-from AnonX import app
-from AnonX.utils.database import (delete_authuser, get_authuser,
+from SatanMusic import app
+from SatanMusic.utils.database import (delete_authuser, get_authuser,
                                        get_authuser_names,
                                        save_authuser)
-from AnonX.utils.decorators import AdminActual
-from AnonX.utils.formatters import int_to_alpha
+from SatanMusic.utils.decorators import AdminActual
+from SatanMusic.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")
 UNAUTH_COMMAND = get_command("UNAUTH_COMMAND")
 AUTHUSERS_COMMAND = get_command("AUTHUSERS_COMMAND")
+
 
 
 @app.on_message(
